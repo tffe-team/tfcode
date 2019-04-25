@@ -1,0 +1,30 @@
+{
+    "tf-tpl": {
+        "prefix": "tf-tpl",
+        "body": [
+            "<template>",
+            "  <div id=\"wrap\" class=\"rui-flex\">",
+            "    <header class=\"rui-header\">",
+            "         <h2 class=\"title\">{{title}}</h2>",
+            "   </header>",
+            "   <div class=\"flex\">",
+            "   </div>",
+            " </div>",
+            "</template>",
+            "<script lang=\"ts\">",
+            "import {Component, Vue} from \"vue-property-decorator\"",
+            "import {Action, Getter} from \"vuex-class\"",
+            "@Component",
+            "export default class Welcome extends Vue {",
+            "  @Getter(\"test\") list: any",
+            "  @Action(\"test\") TestFunction: any",
+            "  title = \"初始页面\"",
+            "  mounted() {",
+            "  }",
+            "}",
+            "</script>",
+            "<style lang=\"scss\" scoped>",
+            "</style>"
+        ]
+    }
+}

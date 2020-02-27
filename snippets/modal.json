@@ -1,0 +1,59 @@
+{
+  "tpl-modal-form": {
+    "prefix": "tf-modal-form",
+    "body": [
+      "<Modal title=\"修改\" v-model=\"modalVisible\">",
+      "  <Form ref=\"modalForm\" :model=\"modalFormInfo\" :label-width=\"110\" inline>",
+      "    <FormItem",
+      "      label=\"姓名\"",
+      "      prop=\"name\"",
+      "      :rules=\"{required: true, type: 'string', message: '请输入', trigger: 'blur'}\"",
+      "    >",
+      "      <Input style=\"width: 200px\" v-model=\"modalFormInfo.stageName\" placeholder=\"请输入\" clearable></Input>",
+      "    </FormItem>",
+      "    <FormItem",
+      "      label=\"城市\"",
+      "      prop=\"cirty\"",
+      "      :rules=\"{required: true, type: 'string', message: '请选择', trigger: 'blur'}\"",
+      "    >",
+      "      <Select style=\"width: 200px\" v-model=\"modalFormInfo.city\" placeholder=\"请选择\">",
+      "        <Option :value=\"1\">北京</Option>",
+      "        <Option :value=\"2\">上海</Option>",
+      "      </Select>",
+      "    </FormItem>",
+      "  </Form>",
+      "  <div slot=\"footer\" class=\"footer\">",
+      "    <Button @click=\"modalVisible = false\" align=\"center\">取消</Button>",
+      "    <Button type=\"primary\" @click=\"submit\" align=\"center\">确定</Button>",
+      "  </div>",
+      "</Modal>"
+    ],
+    "description": "带form表单的弹窗"
+  },
+  "tf-modal-confirm": {
+    "prefix": "tf-modal-confirm",
+    "body": [
+      "confirm(row: any) {",
+      "  this.$Modal.confirm({",
+      "    title: `确定xxx?`,",
+      "    onOk: () => {",
+      "      this._ok(row)",
+      "    }",
+      "  })",
+      "}"
+    ],
+    "description": "modal的confirm类型"
+  },
+  "tf-modal-empty": {
+    "prefix": "tf-modal-empty",
+    "body": [
+      "<Modal",
+      "  v-model=\"modalVisible\"",
+      "  title=\"提示\"",
+      "  @on-ok=\"ok\"",
+      "  @on-cancel=\"cancel\">",
+      "  <!-- 这里写内容 -->",
+      "</Modal>"
+    ]
+  }
+}

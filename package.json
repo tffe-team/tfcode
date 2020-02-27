@@ -21,11 +21,14 @@
     ],
     "main": "./out/extension.js",
     "contributes": {
-        "commands": [{
-            "command": "extension.tffecode",
-            "title": "tffeCode"
-        }],
-        "snippets": [{
+        "commands": [
+            {
+                "command": "extension.tffecode",
+                "title": "tffeCode"
+            }
+        ],
+        "snippets": [
+            {
                 "language": "vue",
                 "path": "./snippets/code.json"
             },
@@ -40,6 +43,86 @@
             {
                 "language": "typescript",
                 "path": "./snippets/code.json"
+            },
+            {
+                "language": "vue",
+                "path": "./snippets/list.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/list.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/list.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/list.json"
+            },
+            {
+                "language": "vue",
+                "path": "./snippets/modal.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/modal.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/modal.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/modal.json"
+            },
+            {
+                "language": "vue",
+                "path": "./snippets/fragment.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/fragment.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/fragment.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/fragment.json"
+            },
+            {
+                "language": "vue",
+                "path": "./snippets/detail.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/detail.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/detail.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/detail.json"
+            },
+            {
+                "language": "vue",
+                "path": "./snippets/tabs.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/tabs.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/tabs.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/tabs.json"
             }
         ]
     },

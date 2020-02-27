@@ -44,8 +44,8 @@
     ],
     "description": "modal的confirm类型"
   },
-  "tf-modal-empty": {
-    "prefix": "tf-modal-empty",
+  "tf-modal-simple": {
+    "prefix": "tf-modal-simple",
     "body": [
       "<Modal",
       "  v-model=\"modalVisible\"",

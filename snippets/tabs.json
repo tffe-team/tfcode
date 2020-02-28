@@ -1,0 +1,34 @@
+{
+  "tf-tabs": {
+    "prefix": "tf-tabs",
+    "body": [
+      "<template>",
+      "  <Tabs :value=\"ativeTab\" :animated=\"false\" @on-click=\"changeTabs\">",
+      "    <TabPane label=\"基本信息\" name=\"tab1\">",
+      "      <!-- 这里是基本信息 -->",
+      "    </TabPane>",
+      "    <TabPane label=\"订单信息\" name=\"tab2\">",
+      "      <!-- 这里是订单信息 -->",
+      "    </TabPane>",
+      "    <TabPane label=\"其他信息\" name=\"tab3\">",
+      "      <!-- 这里是其他信息 -->",
+      "    </TabPane>",
+      "  </Tabs>",
+      "</template>",
+      "\t",
+      "<script lang=\"ts\">",
+      "import Vue from 'vue'",
+      "import { Component, Prop } from 'vue-property-decorator'",
+      "\t",
+      "@Component",
+      "export default class TabsComponent extends Vue {",
+      "  ativeTab = 'tab1'",
+      "\t",
+      "  changeTabs(name: string) {",
+      "    // 切换tab后的操作",
+      "  }",
+      "}",
+      "</script>"
+    ]
+  }
+}

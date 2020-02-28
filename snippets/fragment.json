@@ -1,0 +1,45 @@
+{
+  "tf-request": {
+    "prefix": "tf-request",
+    "body": [
+      "_getData() {",
+      "  getData(this.searchInfo, (res: any) => {",
+      "    if (+res.status === 0) {",
+      "      this.data = res.data",
+      "    }",
+      "  })",
+      "}"
+    ],
+    "description": "一个接口请求"
+  },
+  "tf-api": {
+    "prefix": "tf-api",
+    "body": [
+      "export const getBlackList = (data: any, callback: Function) => {",
+      "  axiosInstance({",
+      "    method: 'post',",
+      "    url: blackListApi.list,",
+      "    data: data",
+      "  }).then((res: any) => {",
+      "    callback(res)",
+      "  })",
+      "}"
+    ]
+  },
+  "tf-router-import": {
+    "prefix": "tf-router",
+    "body": [
+      "const Index = () => import(/* webpackChunkName: \"Index\" */ '@/components/Index.vue')"
+    ]
+  },
+  "tf-router-path": {
+    "prefix": "tf-router-path",
+    "body": [
+      "{",
+      "  path: '/home',",
+      "  name: 'home',",
+      "  component: Home",
+      "}"
+    ]
+  }
+}
